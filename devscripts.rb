@@ -60,6 +60,9 @@ class Devscripts < Formula
     end
     inreplace "scripts/debuild.pl", "/usr/bin/X11", "/usr/local/bin"
     inreplace "scripts/bts.pl", "/etc/devscripts.conf", "#{etc}/devscripts.conf"
+    inreplace(["scripts/dscverify.pl", "scripts/dscverify.1"],
+              "/usr/share/keyrings",
+              "#{HOMEBREW_PREFIX}/share/keyrings")
 
     system "make", "install", "PREFIX=#{prefix}", "SYSCONFDIR=#{prefix}/etc", "DESTDIR=/"
 
