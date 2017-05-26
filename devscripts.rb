@@ -1,7 +1,7 @@
 class Devscripts < Formula
   homepage "http://packages.qa.debian.org/devscripts"
   url "http://ftp.debian.org/debian/pool/main/d/devscripts/devscripts_2.17.5.tar.xz"
-  sha512 "7856ee1d6c57b28502694d32f7a157a791ec63617e33f8a9e44f6c8d5115a7462e0377ac8294ae5da6f0bf5e59d675e5581d239b13b8bd274bf1a86f4a3300b6"
+  sha256 "8b7f7c6f179918fa8137af746e64523a4a1f8815e3c3e5caeb1c298f718db326"
 
   depends_on "dpkg"
   depends_on :python3
